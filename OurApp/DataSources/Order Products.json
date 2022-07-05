@@ -1,0 +1,132 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "nwind_productses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "nwind_products",
+    "MaxGetRowsCount": 500,
+    "Name": "Order Products",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr037_nwind_Products_nwind_Categories_nwind_Cat": "Order Product Categories",
+      "cr037_nwind_Products_nwind_Suppliers_nwind_Supp": "Suppliers",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "entityimage": "Picture",
+      "entityimageid": "EntityImageId",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "nwind_description": "Description",
+      "nwind_discontinued": "Discontinued",
+      "nwind_inventorytransactions_nwind_products_0": "Inventory Transactions",
+      "nwind_listprice": "List Price",
+      "nwind_minimumreorderquantity": "Minimum Reorder Quantity",
+      "nwind_orderdetails_nwind_products_5": "Order Details",
+      "nwind_productcode": "Product Code",
+      "nwind_productname": "Product Name",
+      "nwind_products_AsyncOperations": "System Jobs",
+      "nwind_products_BulkDeleteFailures": "Bulk Delete Failures",
+      "nwind_products_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "nwind_products_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "nwind_products_ProcessSession": "Process Sessions",
+      "nwind_products_SyncErrors": "Sync Errors",
+      "nwind_productsid": "Product",
+      "nwind_purchaseorderdetails_nwind_products_12": "Purchase Order Details",
+      "nwind_quantityperunit": "Quantity Per Unit",
+      "nwind_reorderlevel": "Reorder Level",
+      "nwind_sampledataoriginalid": "Sample Data Original ID",
+      "nwind_standardcost": "Standard Cost",
+      "nwind_targetlevel": "Target Level",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Order Products",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Order Products (Views)",
+    "Name": "_nwind_products_views",
+    "RelatedEntityName": "Order Products",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1b0a2d51-c27e-4993-a9a6-374b34eb7d3d": "Active Products",
+      "2edaa8a4-b6d6-4f07-94df-2fb9a8f37a70": "Inactive Products",
+      "629460d4-36e6-4b56-9821-ae7883bf4224": "Product Advanced Find View",
+      "8194efae-8684-4df6-9f8b-eb5afbbe361c": "Product Lookup View",
+      "e4697232-3b86-4b87-856c-bd54a401b29e": "Product Associated View"
+    }
+  },
+  {
+    "DisplayName": "Discontinued (Order Products)",
+    "Name": "nwind_products_nwind_discontinued",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "nwind_discontinued",
+        "OptionSetReferenceEntityName": "Order Products"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "nwind_discontinued",
+    "RelatedEntityName": "Order Products",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Order Products)",
+    "Name": "nwind_products_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Order Products"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Order Products",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Order Products)",
+    "Name": "nwind_products_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Order Products"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Order Products",
+    "Type": "OptionSetInfo"
+  }
+]

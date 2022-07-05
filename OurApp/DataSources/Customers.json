@@ -1,0 +1,112 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "nwind_customerses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "nwind_customers",
+    "MaxGetRowsCount": 500,
+    "Name": "Customers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "nwind_address": "Address",
+      "nwind_businessphone": "Business Phone",
+      "nwind_city": "City",
+      "nwind_company": "Company",
+      "nwind_country_region": "Country_Region",
+      "nwind_customers_AsyncOperations": "System Jobs",
+      "nwind_customers_BulkDeleteFailures": "Bulk Delete Failures",
+      "nwind_customers_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "nwind_customers_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "nwind_customers_ProcessSession": "Process Sessions",
+      "nwind_customers_SyncErrors": "Sync Errors",
+      "nwind_customersid": "Customer",
+      "nwind_emailaddress": "E-mail Address",
+      "nwind_faxnumber": "Fax Number",
+      "nwind_firstname": "First Name",
+      "nwind_homephone": "Home Phone",
+      "nwind_jobtitle": "Job Title",
+      "nwind_lastname": "Last Name",
+      "nwind_mobilephone": "Mobile Phone",
+      "nwind_notes": "Notes",
+      "nwind_orders_nwind_customers_9": "Orders",
+      "nwind_sampledataoriginalid": "Sample Data Original ID",
+      "nwind_state_province": "State_Province",
+      "nwind_webpage": "Web Page",
+      "nwind_zip_postalcode": "ZIP_Postal Code",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Customers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Customers (Views)",
+    "Name": "_nwind_customers_views",
+    "RelatedEntityName": "Customers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "72579a08-9d81-4ac7-a1b1-9cad31747460": "Customer Lookup View",
+      "7bf5e55e-5de7-4378-bf2e-dfc14ec76207": "Active Customers",
+      "dd606589-c8ca-44a2-ad74-ca6724c0b1dd": "Inactive Customers",
+      "e44bae3c-5a1a-4967-8a64-ab8ed3ef62ba": "Customer Associated View",
+      "e5575e06-6a15-4b77-a40a-67e8186cdf9c": "Customer Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Customers)",
+    "Name": "nwind_customers_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Customers)",
+    "Name": "nwind_customers_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Customers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Customers",
+    "Type": "OptionSetInfo"
+  }
+]

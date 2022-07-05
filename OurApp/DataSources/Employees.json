@@ -1,0 +1,117 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "nwind_employeeses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "nwind_employees",
+    "MaxGetRowsCount": 500,
+    "Name": "Employees",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "entityimage": "Picture",
+      "entityimageid": "EntityImageId",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "nwind_address": "Address",
+      "nwind_businessphone": "Business Phone",
+      "nwind_city": "City",
+      "nwind_company": "Company",
+      "nwind_country_region": "Country_Region",
+      "nwind_emailaddress": "E-mail Address",
+      "nwind_employees_AsyncOperations": "System Jobs",
+      "nwind_employees_BulkDeleteFailures": "Bulk Delete Failures",
+      "nwind_employees_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "nwind_employees_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "nwind_employees_ProcessSession": "Process Sessions",
+      "nwind_employees_SyncErrors": "Sync Errors",
+      "nwind_employeesid": "Employee",
+      "nwind_faxnumber": "Fax Number",
+      "nwind_firstname": "First Name",
+      "nwind_homephone": "Home Phone",
+      "nwind_jobtitle": "Job Title",
+      "nwind_lastname": "Last Name",
+      "nwind_mobilephone": "Mobile Phone",
+      "nwind_notes": "Notes",
+      "nwind_orders_nwind_employees_8": "Orders",
+      "nwind_purchaseorders_nwind_employees_15": "Purchase Orders (nwind_purchaseorders_nwind_employees_15)",
+      "nwind_purchaseorders_nwind_employees_16": "Purchase Orders (nwind_purchaseorders_nwind_employees_16)",
+      "nwind_purchaseorders_nwind_employees_17": "Purchase Orders (nwind_purchaseorders_nwind_employees_17)",
+      "nwind_sampledataoriginalid": "Sample Data Original ID",
+      "nwind_state_province": "State_Province",
+      "nwind_webpage": "Web Page",
+      "nwind_zip_postalcode": "ZIP_Postal Code",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Employees",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Employees (Views)",
+    "Name": "_nwind_employees_views",
+    "RelatedEntityName": "Employees",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "098ab3ec-bfc7-49ea-b0ac-5eae6ea0cc80": "Employee Associated View",
+      "a0b1b600-e93e-44e0-804d-73da97d838a7": "Active Employees",
+      "a644bc2c-cbb8-4a47-b074-28268065c373": "Employee Lookup View",
+      "b5f89ff3-9fbf-4aff-8865-3f5da9668d8f": "Employee Advanced Find View",
+      "c81ab2b0-8ab9-455b-9289-41dd144f1d95": "Inactive Employees"
+    }
+  },
+  {
+    "DisplayName": "Status (Employees)",
+    "Name": "nwind_employees_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Employees"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Employees",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Employees)",
+    "Name": "nwind_employees_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Employees"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Employees",
+    "Type": "OptionSetInfo"
+  }
+]

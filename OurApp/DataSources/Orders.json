@@ -1,0 +1,162 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "nwind_orderses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "nwind_orders",
+    "MaxGetRowsCount": 500,
+    "Name": "Orders",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "nwind_CustomerID": "Customer",
+      "nwind_EmployeeID": "Employee",
+      "nwind_inventorytransactions_nwind_orders_2": "Inventory Transactions",
+      "nwind_invoices_nwind_orders_3": "Invoices",
+      "nwind_notes": "Notes",
+      "nwind_orderdate": "Order Date",
+      "nwind_orderdetails_nwind_orders_4": "Order Details",
+      "nwind_ordernumber": "Order Number",
+      "nwind_orders_AsyncOperations": "System Jobs",
+      "nwind_orders_BulkDeleteFailures": "Bulk Delete Failures",
+      "nwind_orders_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "nwind_orders_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "nwind_orders_ProcessSession": "Process Sessions",
+      "nwind_orders_SyncErrors": "Sync Errors",
+      "nwind_ordersid": "Order",
+      "nwind_orderstatusid": "Order Status",
+      "nwind_paiddate": "Paid Date",
+      "nwind_paymenttype": "Payment Type",
+      "nwind_sampledataorderstatus": "Sample Data Order Status",
+      "nwind_sampledataoriginalid": "Sample Data Original ID",
+      "nwind_shipaddress": "Ship Address",
+      "nwind_shipcity": "Ship City",
+      "nwind_shipcountry_region": "Ship Country_Region",
+      "nwind_shipname": "Ship Name",
+      "nwind_shippeddate": "Shipped Date",
+      "nwind_ShipperID": "Shipper",
+      "nwind_shippingfee": "Shipping Fee",
+      "nwind_shipstate_province": "Ship State_Province",
+      "nwind_shipzip_postalcode": "Ship ZIP_Postal Code",
+      "nwind_taxes": "Taxes",
+      "nwind_taxrate": "Tax Rate",
+      "nwind_taxstatus": "Tax Status",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Orders",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Orders (Views)",
+    "Name": "_nwind_orders_views",
+    "RelatedEntityName": "Orders",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0b7a845d-a5bf-4609-b6d3-4c38151db109": "Order Advanced Find View",
+      "0b934f73-d81c-4ed6-b3bb-9fe485df2980": "Order Associated View",
+      "36253d4d-9530-4742-ad79-9035892af2d5": "Order Lookup View",
+      "6099e021-29c0-4365-8aea-bf6fbcd8df24": "Active Orders",
+      "76d09b1a-6b15-4a48-8946-69adc45a1e48": "Inactive Orders",
+      "a6063f09-fa48-e911-a824-000d3a365662": "All Orders"
+    }
+  },
+  {
+    "DisplayName": "Status (Orders)",
+    "Name": "nwind_orders_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Orders)",
+    "Name": "nwind_orders_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Orders Status",
+    "Name": "nwind_ordersstatus",
+    "OptionSetInfoNameMapping": {
+      "0": "New",
+      "1": "Invoiced",
+      "2": "Shipped",
+      "3": "Closed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "nwind_orderstatusid",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "nwind_orderstatusid",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Tax Status (Orders)",
+    "Name": "nwind_orderstaxstatus",
+    "OptionSetInfoNameMapping": {
+      "0": "Tax Exempt",
+      "1": "Taxable"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "nwind_taxstatus",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "nwind_taxstatus",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "nwind_orderdetailses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "nwind_orderdetails",
+    "MaxGetRowsCount": 500,
+    "Name": "Order Details",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "nwind_dateallocated": "Date Allocated",
+      "nwind_discount": "Discount",
+      "nwind_InventoryID": "Inventory",
+      "nwind_orderdetails_AsyncOperations": "System Jobs",
+      "nwind_orderdetails_BulkDeleteFailures": "Bulk Delete Failures",
+      "nwind_orderdetails_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "nwind_orderdetails_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "nwind_orderdetails_ProcessSession": "Process Sessions",
+      "nwind_orderdetails_SyncErrors": "Sync Errors",
+      "nwind_orderdetailsid": "Order Detail",
+      "nwind_orderdetailstatusid": "Order Detail Status",
+      "nwind_OrderID": "Order",
+      "nwind_primaryname": "Primary Name",
+      "nwind_ProductID": "Product",
+      "nwind_PurchaseOrderID": "Purchase Order",
+      "nwind_quantity": "Quantity",
+      "nwind_sampledataorderdetailstatus": "Sample Data Order Detail Status",
+      "nwind_sampledataoriginalid": "Sample Data Original ID",
+      "nwind_unitprice": "Unit Price",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Order Details",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Order Details (Views)",
+    "Name": "_nwind_orderdetails_views",
+    "RelatedEntityName": "Order Details",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "135b73cc-d91b-4a38-b034-658cac2b896e": "Active Order Details",
+      "841e22e0-e60a-4fe9-aa54-f39312fd183c": "Order Detail Lookup View",
+      "89ee9e27-b6db-46f6-a13f-3913b71ff6d0": "Order Detail Associated View",
+      "b2cabd97-27df-48b0-b9df-35e28d5014f2": "Inactive Order Details",
+      "bb84c46b-f948-e911-a82f-000d3a375590": "Order Grid",
+      "c4074056-934e-4f18-bafa-fe062bb13299": "Order Detail Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Order Details)",
+    "Name": "nwind_orderdetails_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Order Details"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Order Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Order Details)",
+    "Name": "nwind_orderdetails_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Order Details"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Order Details",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Order Details Status",
+    "Name": "nwind_orderdetailsstatus",
+    "OptionSetInfoNameMapping": {
+      "0": "None",
+      "1": "Allocated",
+      "2": "Invoiced",
+      "3": "Shipped",
+      "4": "On Order",
+      "5": "No Stock"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "nwind_orderdetailstatusid",
+        "OptionSetReferenceEntityName": "Order Details"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "nwind_orderdetailstatusid",
+    "RelatedEntityName": "Order Details",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_nwind_orders_forms",
+      "Namespace": "Orders (Forms)",
+      "Values": {
+        "Information": "e5fc0236-bcb1-4a9e-a96b-e9e376bb704c"
+      }
+    },
+    {
+      "Kind": "default.cds_nwind_customers_forms",
+      "Namespace": "Customers (Forms)",
+      "Values": {
+        "Information": "4539d06a-ec0a-4708-82c7-a7f430c5ae7f"
+      }
+    },
+    {
+      "Kind": "default.cds_nwind_orderdetails_forms",
+      "Namespace": "Order Details (Forms)",
+      "Values": {
+        "Information": "e25a6260-9de9-4b18-a667-c2a8a1109093"
+      }
+    },
+    {
+      "Kind": "default.cds_nwind_employees_forms",
+      "Namespace": "Employees (Forms)",
+      "Values": {
+        "Information": "413dc1b0-f375-4117-bb5e-f9dd09a5af64"
+      }
+    },
+    {
+      "Kind": "default.cds_nwind_products_forms",
+      "Namespace": "Order Products (Forms)",
+      "Values": {
+        "Information": "983768d8-5e20-4d8e-9299-d8442716b916"
+      }
+    }
+  ]
+}
